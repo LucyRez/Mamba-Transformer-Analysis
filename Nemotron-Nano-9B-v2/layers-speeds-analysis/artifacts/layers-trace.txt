@@ -1,0 +1,2772 @@
+[0000] backbone.embeddings
+  Тип: Embedding
+  Время: 52.957 ms
+  Вход: [(1, 215)]
+  Выход: (1, 215, 4480)
+
+[0001] backbone.layers.0.norm
+  Тип: NemotronHRMSNorm
+  Время: 57.615 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0002] backbone.layers.0.mixer.in_proj
+  Тип: Linear
+  Время: 556.896 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0003] backbone.layers.0.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 400.252 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0004] backbone.layers.0.mixer.out_proj
+  Тип: Linear
+  Время: 9.576 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0005] backbone.layers.1.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.414 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0006] backbone.layers.1.mixer.up_proj
+  Тип: Linear
+  Время: 0.963 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0007] backbone.layers.1.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 12.582 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0008] backbone.layers.1.mixer.down_proj
+  Тип: Linear
+  Время: 0.934 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0009] backbone.layers.2.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.314 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0010] backbone.layers.2.mixer.in_proj
+  Тип: Linear
+  Время: 1.255 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0011] backbone.layers.2.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.283 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0012] backbone.layers.2.mixer.out_proj
+  Тип: Linear
+  Время: 0.611 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0013] backbone.layers.3.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.223 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0014] backbone.layers.3.mixer.up_proj
+  Тип: Linear
+  Время: 0.839 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0015] backbone.layers.3.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.088 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0016] backbone.layers.3.mixer.down_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0017] backbone.layers.4.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.232 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0018] backbone.layers.4.mixer.in_proj
+  Тип: Linear
+  Время: 1.232 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0019] backbone.layers.4.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.266 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0020] backbone.layers.4.mixer.out_proj
+  Тип: Linear
+  Время: 0.605 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0021] backbone.layers.5.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.231 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0022] backbone.layers.5.mixer.up_proj
+  Тип: Linear
+  Время: 0.832 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0023] backbone.layers.5.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.092 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0024] backbone.layers.5.mixer.down_proj
+  Тип: Linear
+  Время: 0.830 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0025] backbone.layers.6.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0026] backbone.layers.6.mixer.in_proj
+  Тип: Linear
+  Время: 1.239 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0027] backbone.layers.6.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.261 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0028] backbone.layers.6.mixer.out_proj
+  Тип: Linear
+  Время: 0.596 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0029] backbone.layers.7.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.228 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0030] backbone.layers.7.mixer.in_proj
+  Тип: Linear
+  Время: 1.221 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0031] backbone.layers.7.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.237 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0032] backbone.layers.7.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0033] backbone.layers.8.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0034] backbone.layers.8.mixer.up_proj
+  Тип: Linear
+  Время: 0.833 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0035] backbone.layers.8.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.073 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0036] backbone.layers.8.mixer.down_proj
+  Тип: Linear
+  Время: 0.828 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0037] backbone.layers.9.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0038] backbone.layers.9.mixer.in_proj
+  Тип: Linear
+  Время: 1.230 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0039] backbone.layers.9.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.247 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0040] backbone.layers.9.mixer.out_proj
+  Тип: Linear
+  Время: 0.601 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0041] backbone.layers.10.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.221 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0042] backbone.layers.10.mixer.up_proj
+  Тип: Linear
+  Время: 0.840 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0043] backbone.layers.10.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0044] backbone.layers.10.mixer.down_proj
+  Тип: Linear
+  Время: 0.831 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0045] backbone.layers.11.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.220 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0046] backbone.layers.11.mixer.in_proj
+  Тип: Linear
+  Время: 1.228 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0047] backbone.layers.11.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.246 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0048] backbone.layers.11.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0049] backbone.layers.12.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.225 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0050] backbone.layers.12.mixer.up_proj
+  Тип: Linear
+  Время: 0.832 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0051] backbone.layers.12.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.071 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0052] backbone.layers.12.mixer.down_proj
+  Тип: Linear
+  Время: 0.826 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0053] backbone.layers.13.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.219 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0054] backbone.layers.13.mixer.in_proj
+  Тип: Linear
+  Время: 1.230 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0055] backbone.layers.13.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.227 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0056] backbone.layers.13.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0057] backbone.layers.14.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0058] backbone.layers.14.mixer.q_proj
+  Тип: Linear
+  Время: 0.398 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0059] backbone.layers.14.mixer.k_proj
+  Тип: Linear
+  Время: 31.663 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0060] backbone.layers.14.mixer.v_proj
+  Тип: Linear
+  Время: 0.162 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0061] backbone.layers.14.mixer.o_proj
+  Тип: Linear
+  Время: 0.429 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0062] backbone.layers.15.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.293 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0063] backbone.layers.15.mixer.up_proj
+  Тип: Linear
+  Время: 0.841 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0064] backbone.layers.15.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.086 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0065] backbone.layers.15.mixer.down_proj
+  Тип: Linear
+  Время: 0.833 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0066] backbone.layers.16.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.214 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0067] backbone.layers.16.mixer.in_proj
+  Тип: Linear
+  Время: 1.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0068] backbone.layers.16.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.271 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0069] backbone.layers.16.mixer.out_proj
+  Тип: Linear
+  Время: 0.606 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0070] backbone.layers.17.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.229 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0071] backbone.layers.17.mixer.up_proj
+  Тип: Linear
+  Время: 0.839 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0072] backbone.layers.17.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.085 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0073] backbone.layers.17.mixer.down_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0074] backbone.layers.18.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.206 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0075] backbone.layers.18.mixer.in_proj
+  Тип: Linear
+  Время: 1.236 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0076] backbone.layers.18.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.253 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0077] backbone.layers.18.mixer.out_proj
+  Тип: Linear
+  Время: 0.597 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0078] backbone.layers.19.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.221 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0079] backbone.layers.19.mixer.up_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0080] backbone.layers.19.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.074 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0081] backbone.layers.19.mixer.down_proj
+  Тип: Linear
+  Время: 0.828 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0082] backbone.layers.20.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.200 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0083] backbone.layers.20.mixer.in_proj
+  Тип: Linear
+  Время: 1.219 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0084] backbone.layers.20.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.245 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0085] backbone.layers.20.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0086] backbone.layers.21.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.221 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0087] backbone.layers.21.mixer.q_proj
+  Тип: Linear
+  Время: 0.334 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0088] backbone.layers.21.mixer.k_proj
+  Тип: Linear
+  Время: 0.112 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0089] backbone.layers.21.mixer.v_proj
+  Тип: Linear
+  Время: 0.102 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0090] backbone.layers.21.mixer.o_proj
+  Тип: Linear
+  Время: 0.329 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0091] backbone.layers.22.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.221 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0092] backbone.layers.22.mixer.up_proj
+  Тип: Linear
+  Время: 0.844 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0093] backbone.layers.22.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.073 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0094] backbone.layers.22.mixer.down_proj
+  Тип: Linear
+  Время: 0.823 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0095] backbone.layers.23.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.201 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0096] backbone.layers.23.mixer.in_proj
+  Тип: Linear
+  Время: 1.238 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0097] backbone.layers.23.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.257 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0098] backbone.layers.23.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0099] backbone.layers.24.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.230 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0100] backbone.layers.24.mixer.up_proj
+  Тип: Linear
+  Время: 0.830 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0101] backbone.layers.24.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.072 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0102] backbone.layers.24.mixer.down_proj
+  Тип: Linear
+  Время: 0.817 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0103] backbone.layers.25.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.205 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0104] backbone.layers.25.mixer.in_proj
+  Тип: Linear
+  Время: 1.256 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0105] backbone.layers.25.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.251 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0106] backbone.layers.25.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0107] backbone.layers.26.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.234 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0108] backbone.layers.26.mixer.up_proj
+  Тип: Linear
+  Время: 0.839 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0109] backbone.layers.26.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.076 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0110] backbone.layers.26.mixer.down_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0111] backbone.layers.27.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.196 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0112] backbone.layers.27.mixer.in_proj
+  Тип: Linear
+  Время: 1.245 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0113] backbone.layers.27.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.255 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0114] backbone.layers.27.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0115] backbone.layers.28.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.228 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0116] backbone.layers.28.mixer.up_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0117] backbone.layers.28.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.074 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0118] backbone.layers.28.mixer.down_proj
+  Тип: Linear
+  Время: 0.837 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0119] backbone.layers.29.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0120] backbone.layers.29.mixer.in_proj
+  Тип: Linear
+  Время: 1.236 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0121] backbone.layers.29.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.257 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0122] backbone.layers.29.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0123] backbone.layers.30.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.227 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0124] backbone.layers.30.mixer.q_proj
+  Тип: Linear
+  Время: 0.337 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0125] backbone.layers.30.mixer.k_proj
+  Тип: Linear
+  Время: 0.117 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0126] backbone.layers.30.mixer.v_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0127] backbone.layers.30.mixer.o_proj
+  Тип: Linear
+  Время: 0.329 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0128] backbone.layers.31.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.202 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0129] backbone.layers.31.mixer.up_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0130] backbone.layers.31.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.072 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0131] backbone.layers.31.mixer.down_proj
+  Тип: Linear
+  Время: 0.830 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0132] backbone.layers.32.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.194 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0133] backbone.layers.32.mixer.in_proj
+  Тип: Linear
+  Время: 1.238 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0134] backbone.layers.32.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.233 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0135] backbone.layers.32.mixer.out_proj
+  Тип: Linear
+  Время: 0.596 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0136] backbone.layers.33.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.208 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0137] backbone.layers.33.mixer.up_proj
+  Тип: Linear
+  Время: 0.828 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0138] backbone.layers.33.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.073 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0139] backbone.layers.33.mixer.down_proj
+  Тип: Linear
+  Время: 0.825 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0140] backbone.layers.34.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.196 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0141] backbone.layers.34.mixer.in_proj
+  Тип: Linear
+  Время: 1.230 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0142] backbone.layers.34.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.234 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0143] backbone.layers.34.mixer.out_proj
+  Тип: Linear
+  Время: 0.596 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0144] backbone.layers.35.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.220 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0145] backbone.layers.35.mixer.up_proj
+  Тип: Linear
+  Время: 0.836 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0146] backbone.layers.35.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.074 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0147] backbone.layers.35.mixer.down_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0148] backbone.layers.36.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.199 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0149] backbone.layers.36.mixer.in_proj
+  Тип: Linear
+  Время: 1.232 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0150] backbone.layers.36.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.236 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0151] backbone.layers.36.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0152] backbone.layers.37.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.211 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0153] backbone.layers.37.mixer.up_proj
+  Тип: Linear
+  Время: 0.825 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0154] backbone.layers.37.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.075 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0155] backbone.layers.37.mixer.down_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0156] backbone.layers.38.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0157] backbone.layers.38.mixer.in_proj
+  Тип: Linear
+  Время: 1.228 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0158] backbone.layers.38.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.240 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0159] backbone.layers.38.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0160] backbone.layers.39.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.210 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0161] backbone.layers.39.mixer.q_proj
+  Тип: Linear
+  Время: 0.337 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0162] backbone.layers.39.mixer.k_proj
+  Тип: Linear
+  Время: 0.116 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0163] backbone.layers.39.mixer.v_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0164] backbone.layers.39.mixer.o_proj
+  Тип: Linear
+  Время: 0.334 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0165] backbone.layers.40.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0166] backbone.layers.40.mixer.up_proj
+  Тип: Linear
+  Время: 0.828 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0167] backbone.layers.40.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.071 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0168] backbone.layers.40.mixer.down_proj
+  Тип: Linear
+  Время: 0.825 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0169] backbone.layers.41.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.208 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0170] backbone.layers.41.mixer.in_proj
+  Тип: Linear
+  Время: 1.229 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0171] backbone.layers.41.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 11.556 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0172] backbone.layers.41.mixer.out_proj
+  Тип: Linear
+  Время: 0.613 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0173] backbone.layers.42.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.815 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0174] backbone.layers.42.mixer.up_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0175] backbone.layers.42.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.074 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0176] backbone.layers.42.mixer.down_proj
+  Тип: Linear
+  Время: 0.822 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0177] backbone.layers.43.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.199 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0178] backbone.layers.43.mixer.in_proj
+  Тип: Linear
+  Время: 1.246 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0179] backbone.layers.43.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.272 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0180] backbone.layers.43.mixer.out_proj
+  Тип: Linear
+  Время: 0.609 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0181] backbone.layers.44.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.234 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0182] backbone.layers.44.mixer.in_proj
+  Тип: Linear
+  Время: 1.222 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0183] backbone.layers.44.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.242 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0184] backbone.layers.44.mixer.out_proj
+  Тип: Linear
+  Время: 0.615 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0185] backbone.layers.45.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0186] backbone.layers.45.mixer.up_proj
+  Тип: Linear
+  Время: 0.843 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0187] backbone.layers.45.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.082 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0188] backbone.layers.45.mixer.down_proj
+  Тип: Linear
+  Время: 0.850 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0189] backbone.layers.46.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.228 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0190] backbone.layers.46.mixer.in_proj
+  Тип: Linear
+  Время: 1.227 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0191] backbone.layers.46.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.231 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0192] backbone.layers.46.mixer.out_proj
+  Тип: Linear
+  Время: 0.616 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0193] backbone.layers.47.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.205 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0194] backbone.layers.47.mixer.up_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0195] backbone.layers.47.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.075 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0196] backbone.layers.47.mixer.down_proj
+  Тип: Linear
+  Время: 0.840 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0197] backbone.layers.48.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.218 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0198] backbone.layers.48.mixer.in_proj
+  Тип: Linear
+  Время: 1.233 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0199] backbone.layers.48.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.236 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0200] backbone.layers.48.mixer.out_proj
+  Тип: Linear
+  Время: 0.610 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0201] backbone.layers.49.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.211 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0202] backbone.layers.49.mixer.up_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0203] backbone.layers.49.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.079 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0204] backbone.layers.49.mixer.down_proj
+  Тип: Linear
+  Время: 0.831 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0205] backbone.layers.50.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.218 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0206] backbone.layers.50.mixer.in_proj
+  Тип: Linear
+  Время: 1.227 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0207] backbone.layers.50.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.229 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0208] backbone.layers.50.mixer.out_proj
+  Тип: Linear
+  Время: 0.597 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0209] backbone.layers.51.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.211 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0210] backbone.layers.51.mixer.up_proj
+  Тип: Linear
+  Время: 0.839 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0211] backbone.layers.51.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.080 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0212] backbone.layers.51.mixer.down_proj
+  Тип: Linear
+  Время: 0.849 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0213] backbone.layers.52.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0214] backbone.layers.52.mixer.in_proj
+  Тип: Linear
+  Время: 1.234 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0215] backbone.layers.52.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.228 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0216] backbone.layers.52.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0217] backbone.layers.53.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.201 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0218] backbone.layers.53.mixer.up_proj
+  Тип: Linear
+  Время: 0.833 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0219] backbone.layers.53.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.095 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0220] backbone.layers.53.mixer.down_proj
+  Тип: Linear
+  Время: 0.840 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0221] backbone.layers.54.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0222] backbone.layers.54.mixer.in_proj
+  Тип: Linear
+  Время: 1.230 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0223] backbone.layers.54.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.256 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0224] backbone.layers.54.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0225] backbone.layers.55.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.218 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0226] backbone.layers.55.mixer.up_proj
+  Тип: Linear
+  Время: 0.833 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0227] backbone.layers.55.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.074 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0228] backbone.layers.55.mixer.down_proj
+  Тип: Linear
+  Время: 0.825 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0229] backbone.norm_f
+  Тип: NemotronHRMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0230] lm_head
+  Тип: Linear
+  Время: 6.370 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 131072)
+
+[0231] backbone.embeddings
+  Тип: Embedding
+  Время: 0.156 ms
+  Вход: [(1, 215)]
+  Выход: (1, 215, 4480)
+
+[0232] backbone.layers.0.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0233] backbone.layers.0.mixer.in_proj
+  Тип: Linear
+  Время: 1.260 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0234] backbone.layers.0.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.250 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0235] backbone.layers.0.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0236] backbone.layers.1.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.206 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0237] backbone.layers.1.mixer.up_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0238] backbone.layers.1.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.071 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0239] backbone.layers.1.mixer.down_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0240] backbone.layers.2.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.194 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0241] backbone.layers.2.mixer.in_proj
+  Тип: Linear
+  Время: 1.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0242] backbone.layers.2.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.237 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0243] backbone.layers.2.mixer.out_proj
+  Тип: Linear
+  Время: 0.603 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0244] backbone.layers.3.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.218 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0245] backbone.layers.3.mixer.up_proj
+  Тип: Linear
+  Время: 0.856 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0246] backbone.layers.3.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.084 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0247] backbone.layers.3.mixer.down_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0248] backbone.layers.4.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0249] backbone.layers.4.mixer.in_proj
+  Тип: Linear
+  Время: 1.253 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0250] backbone.layers.4.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.238 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0251] backbone.layers.4.mixer.out_proj
+  Тип: Linear
+  Время: 0.602 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0252] backbone.layers.5.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.210 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0253] backbone.layers.5.mixer.up_proj
+  Тип: Linear
+  Время: 0.854 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0254] backbone.layers.5.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.083 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0255] backbone.layers.5.mixer.down_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0256] backbone.layers.6.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0257] backbone.layers.6.mixer.in_proj
+  Тип: Linear
+  Время: 1.245 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0258] backbone.layers.6.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.234 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0259] backbone.layers.6.mixer.out_proj
+  Тип: Linear
+  Время: 0.630 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0260] backbone.layers.7.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0261] backbone.layers.7.mixer.in_proj
+  Тип: Linear
+  Время: 1.241 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0262] backbone.layers.7.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.234 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0263] backbone.layers.7.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0264] backbone.layers.8.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.208 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0265] backbone.layers.8.mixer.up_proj
+  Тип: Linear
+  Время: 0.841 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0266] backbone.layers.8.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.082 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0267] backbone.layers.8.mixer.down_proj
+  Тип: Linear
+  Время: 0.833 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0268] backbone.layers.9.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0269] backbone.layers.9.mixer.in_proj
+  Тип: Linear
+  Время: 1.239 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0270] backbone.layers.9.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.229 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0271] backbone.layers.9.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0272] backbone.layers.10.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.202 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0273] backbone.layers.10.mixer.up_proj
+  Тип: Linear
+  Время: 0.843 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0274] backbone.layers.10.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0275] backbone.layers.10.mixer.down_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0276] backbone.layers.11.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.212 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0277] backbone.layers.11.mixer.in_proj
+  Тип: Linear
+  Время: 1.233 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0278] backbone.layers.11.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.248 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0279] backbone.layers.11.mixer.out_proj
+  Тип: Linear
+  Время: 0.601 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0280] backbone.layers.12.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.212 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0281] backbone.layers.12.mixer.up_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0282] backbone.layers.12.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.071 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0283] backbone.layers.12.mixer.down_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0284] backbone.layers.13.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.211 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0285] backbone.layers.13.mixer.in_proj
+  Тип: Linear
+  Время: 1.233 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0286] backbone.layers.13.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.236 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0287] backbone.layers.13.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0288] backbone.layers.14.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0289] backbone.layers.14.mixer.q_proj
+  Тип: Linear
+  Время: 0.335 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0290] backbone.layers.14.mixer.k_proj
+  Тип: Linear
+  Время: 0.116 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0291] backbone.layers.14.mixer.v_proj
+  Тип: Linear
+  Время: 0.108 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0292] backbone.layers.14.mixer.o_proj
+  Тип: Linear
+  Время: 0.332 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0293] backbone.layers.15.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0294] backbone.layers.15.mixer.up_proj
+  Тип: Linear
+  Время: 0.828 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0295] backbone.layers.15.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.077 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0296] backbone.layers.15.mixer.down_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0297] backbone.layers.16.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0298] backbone.layers.16.mixer.in_proj
+  Тип: Linear
+  Время: 1.231 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0299] backbone.layers.16.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.240 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0300] backbone.layers.16.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0301] backbone.layers.17.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.202 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0302] backbone.layers.17.mixer.up_proj
+  Тип: Linear
+  Время: 0.859 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0303] backbone.layers.17.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.069 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0304] backbone.layers.17.mixer.down_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0305] backbone.layers.18.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.205 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0306] backbone.layers.18.mixer.in_proj
+  Тип: Linear
+  Время: 1.234 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0307] backbone.layers.18.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.232 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0308] backbone.layers.18.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0309] backbone.layers.19.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.201 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0310] backbone.layers.19.mixer.up_proj
+  Тип: Linear
+  Время: 0.864 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0311] backbone.layers.19.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.071 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0312] backbone.layers.19.mixer.down_proj
+  Тип: Linear
+  Время: 0.841 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0313] backbone.layers.20.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.225 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0314] backbone.layers.20.mixer.in_proj
+  Тип: Linear
+  Время: 1.229 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0315] backbone.layers.20.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.230 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0316] backbone.layers.20.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0317] backbone.layers.21.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.201 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0318] backbone.layers.21.mixer.q_proj
+  Тип: Linear
+  Время: 0.344 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0319] backbone.layers.21.mixer.k_proj
+  Тип: Linear
+  Время: 0.108 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0320] backbone.layers.21.mixer.v_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0321] backbone.layers.21.mixer.o_proj
+  Тип: Linear
+  Время: 0.332 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0322] backbone.layers.22.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.196 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0323] backbone.layers.22.mixer.up_proj
+  Тип: Linear
+  Время: 0.859 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0324] backbone.layers.22.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.068 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0325] backbone.layers.22.mixer.down_proj
+  Тип: Linear
+  Время: 0.836 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0326] backbone.layers.23.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0327] backbone.layers.23.mixer.in_proj
+  Тип: Linear
+  Время: 1.236 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0328] backbone.layers.23.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.231 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0329] backbone.layers.23.mixer.out_proj
+  Тип: Linear
+  Время: 0.615 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0330] backbone.layers.24.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0331] backbone.layers.24.mixer.up_proj
+  Тип: Linear
+  Время: 0.849 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0332] backbone.layers.24.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0333] backbone.layers.24.mixer.down_proj
+  Тип: Linear
+  Время: 0.816 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0334] backbone.layers.25.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.209 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0335] backbone.layers.25.mixer.in_proj
+  Тип: Linear
+  Время: 1.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0336] backbone.layers.25.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.232 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0337] backbone.layers.25.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0338] backbone.layers.26.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.209 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0339] backbone.layers.26.mixer.up_proj
+  Тип: Linear
+  Время: 0.844 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0340] backbone.layers.26.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0341] backbone.layers.26.mixer.down_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0342] backbone.layers.27.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.193 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0343] backbone.layers.27.mixer.in_proj
+  Тип: Linear
+  Время: 1.239 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0344] backbone.layers.27.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.229 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0345] backbone.layers.27.mixer.out_proj
+  Тип: Linear
+  Время: 0.613 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0346] backbone.layers.28.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0347] backbone.layers.28.mixer.up_proj
+  Тип: Linear
+  Время: 0.854 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0348] backbone.layers.28.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.069 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0349] backbone.layers.28.mixer.down_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0350] backbone.layers.29.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0351] backbone.layers.29.mixer.in_proj
+  Тип: Linear
+  Время: 1.231 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0352] backbone.layers.29.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.238 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0353] backbone.layers.29.mixer.out_proj
+  Тип: Linear
+  Время: 0.598 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0354] backbone.layers.30.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.201 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0355] backbone.layers.30.mixer.q_proj
+  Тип: Linear
+  Время: 0.335 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0356] backbone.layers.30.mixer.k_proj
+  Тип: Linear
+  Время: 0.114 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0357] backbone.layers.30.mixer.v_proj
+  Тип: Linear
+  Время: 0.112 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0358] backbone.layers.30.mixer.o_proj
+  Тип: Linear
+  Время: 0.329 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0359] backbone.layers.31.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.219 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0360] backbone.layers.31.mixer.up_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0361] backbone.layers.31.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.076 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0362] backbone.layers.31.mixer.down_proj
+  Тип: Linear
+  Время: 0.825 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0363] backbone.layers.32.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.202 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0364] backbone.layers.32.mixer.in_proj
+  Тип: Linear
+  Время: 1.226 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0365] backbone.layers.32.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.231 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0366] backbone.layers.32.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0367] backbone.layers.33.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.201 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0368] backbone.layers.33.mixer.up_proj
+  Тип: Linear
+  Время: 0.850 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0369] backbone.layers.33.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.068 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0370] backbone.layers.33.mixer.down_proj
+  Тип: Linear
+  Время: 0.833 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0371] backbone.layers.34.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.205 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0372] backbone.layers.34.mixer.in_proj
+  Тип: Linear
+  Время: 1.234 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0373] backbone.layers.34.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.230 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0374] backbone.layers.34.mixer.out_proj
+  Тип: Linear
+  Время: 0.607 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0375] backbone.layers.35.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0376] backbone.layers.35.mixer.up_proj
+  Тип: Linear
+  Время: 0.861 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0377] backbone.layers.35.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.068 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0378] backbone.layers.35.mixer.down_proj
+  Тип: Linear
+  Время: 0.832 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0379] backbone.layers.36.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.205 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0380] backbone.layers.36.mixer.in_proj
+  Тип: Linear
+  Время: 1.238 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0381] backbone.layers.36.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.233 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0382] backbone.layers.36.mixer.out_proj
+  Тип: Linear
+  Время: 0.610 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0383] backbone.layers.37.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.205 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0384] backbone.layers.37.mixer.up_proj
+  Тип: Linear
+  Время: 0.859 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0385] backbone.layers.37.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0386] backbone.layers.37.mixer.down_proj
+  Тип: Linear
+  Время: 0.827 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0387] backbone.layers.38.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.206 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0388] backbone.layers.38.mixer.in_proj
+  Тип: Linear
+  Время: 1.227 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0389] backbone.layers.38.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.235 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0390] backbone.layers.38.mixer.out_proj
+  Тип: Linear
+  Время: 0.597 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0391] backbone.layers.39.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0392] backbone.layers.39.mixer.q_proj
+  Тип: Linear
+  Время: 0.329 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 5120)
+
+[0393] backbone.layers.39.mixer.k_proj
+  Тип: Linear
+  Время: 0.113 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0394] backbone.layers.39.mixer.v_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 1024)
+
+[0395] backbone.layers.39.mixer.o_proj
+  Тип: Linear
+  Время: 0.330 ms
+  Вход: [(1, 215, 5120)]
+  Выход: (1, 215, 4480)
+
+[0396] backbone.layers.40.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.196 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0397] backbone.layers.40.mixer.up_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0398] backbone.layers.40.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0399] backbone.layers.40.mixer.down_proj
+  Тип: Linear
+  Время: 0.830 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0400] backbone.layers.41.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.198 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0401] backbone.layers.41.mixer.in_proj
+  Тип: Linear
+  Время: 1.236 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0402] backbone.layers.41.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.232 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0403] backbone.layers.41.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0404] backbone.layers.42.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0405] backbone.layers.42.mixer.up_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0406] backbone.layers.42.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.071 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0407] backbone.layers.42.mixer.down_proj
+  Тип: Linear
+  Время: 0.823 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0408] backbone.layers.43.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.195 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0409] backbone.layers.43.mixer.in_proj
+  Тип: Linear
+  Время: 1.243 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0410] backbone.layers.43.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.230 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0411] backbone.layers.43.mixer.out_proj
+  Тип: Linear
+  Время: 0.603 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0412] backbone.layers.44.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.202 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0413] backbone.layers.44.mixer.in_proj
+  Тип: Linear
+  Время: 1.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0414] backbone.layers.44.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.243 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0415] backbone.layers.44.mixer.out_proj
+  Тип: Linear
+  Время: 0.601 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0416] backbone.layers.45.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0417] backbone.layers.45.mixer.up_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0418] backbone.layers.45.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.070 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0419] backbone.layers.45.mixer.down_proj
+  Тип: Linear
+  Время: 0.828 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0420] backbone.layers.46.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.197 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0421] backbone.layers.46.mixer.in_proj
+  Тип: Linear
+  Время: 1.228 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0422] backbone.layers.46.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.242 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0423] backbone.layers.46.mixer.out_proj
+  Тип: Linear
+  Время: 0.595 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0424] backbone.layers.47.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.214 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0425] backbone.layers.47.mixer.up_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0426] backbone.layers.47.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.081 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0427] backbone.layers.47.mixer.down_proj
+  Тип: Linear
+  Время: 0.826 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0428] backbone.layers.48.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.200 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0429] backbone.layers.48.mixer.in_proj
+  Тип: Linear
+  Время: 1.233 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0430] backbone.layers.48.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.241 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0431] backbone.layers.48.mixer.out_proj
+  Тип: Linear
+  Время: 0.600 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0432] backbone.layers.49.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.211 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0433] backbone.layers.49.mixer.up_proj
+  Тип: Linear
+  Время: 0.837 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0434] backbone.layers.49.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.068 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0435] backbone.layers.49.mixer.down_proj
+  Тип: Linear
+  Время: 0.829 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0436] backbone.layers.50.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.208 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0437] backbone.layers.50.mixer.in_proj
+  Тип: Linear
+  Время: 1.229 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0438] backbone.layers.50.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.232 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0439] backbone.layers.50.mixer.out_proj
+  Тип: Linear
+  Время: 0.599 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0440] backbone.layers.51.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0441] backbone.layers.51.mixer.up_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0442] backbone.layers.51.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.069 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0443] backbone.layers.51.mixer.down_proj
+  Тип: Linear
+  Время: 0.834 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0444] backbone.layers.52.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.209 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0445] backbone.layers.52.mixer.in_proj
+  Тип: Linear
+  Время: 1.235 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0446] backbone.layers.52.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.234 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0447] backbone.layers.52.mixer.out_proj
+  Тип: Linear
+  Время: 0.609 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0448] backbone.layers.53.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.202 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0449] backbone.layers.53.mixer.up_proj
+  Тип: Linear
+  Время: 0.851 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0450] backbone.layers.53.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.082 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0451] backbone.layers.53.mixer.down_proj
+  Тип: Linear
+  Время: 0.840 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0452] backbone.layers.54.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.209 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0453] backbone.layers.54.mixer.in_proj
+  Тип: Linear
+  Время: 1.232 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 22656)
+
+[0454] backbone.layers.54.mixer.norm
+  Тип: MambaRMSNormGated
+  Время: 0.239 ms
+  Вход: [(1, 215, 10240), (1, 215, 10240)]
+  Выход: (1, 215, 10240)
+
+[0455] backbone.layers.54.mixer.out_proj
+  Тип: Linear
+  Время: 0.605 ms
+  Вход: [(1, 215, 10240)]
+  Выход: (1, 215, 4480)
+
+[0456] backbone.layers.55.norm
+  Тип: NemotronHRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0457] backbone.layers.55.mixer.up_proj
+  Тип: Linear
+  Время: 0.841 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 15680)
+
+[0458] backbone.layers.55.mixer.act_fn
+  Тип: ReLUSquaredActivation
+  Время: 0.068 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 15680)
+
+[0459] backbone.layers.55.mixer.down_proj
+  Тип: Linear
+  Время: 0.838 ms
+  Вход: [(1, 215, 15680)]
+  Выход: (1, 215, 4480)
+
+[0460] backbone.norm_f
+  Тип: NemotronHRMSNorm
+  Время: 0.207 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 4480)
+
+[0461] lm_head
+  Тип: Linear
+  Время: 6.064 ms
+  Вход: [(1, 215, 4480)]
+  Выход: (1, 215, 131072)
+

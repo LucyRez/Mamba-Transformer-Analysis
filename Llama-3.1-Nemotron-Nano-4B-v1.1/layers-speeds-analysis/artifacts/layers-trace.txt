@@ -1,0 +1,3888 @@
+[0000] model.embed_tokens
+  Тип: Embedding
+  Время: 0.347 ms
+  Вход: [(1, 211)]
+  Выход: (1, 211, 3072)
+
+[0001] model.rotary_emb
+  Тип: LlamaRotaryEmbedding
+  Время: 0.761 ms
+  Вход: [(1, 211, 3072), (1, 211)]
+  Выход: [(1, 211, 128), (1, 211, 128)]
+
+[0002] model.layers.0.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.292 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0003] model.layers.0.self_attn.q_proj
+  Тип: Linear
+  Время: 0.297 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0004] model.layers.0.self_attn.k_proj
+  Тип: Linear
+  Время: 0.167 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0005] model.layers.0.self_attn.v_proj
+  Тип: Linear
+  Время: 0.102 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0006] model.layers.0.self_attn.o_proj
+  Тип: Linear
+  Время: 0.203 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0007] model.layers.0.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0008] model.layers.0.mlp.gate_proj
+  Тип: Linear
+  Время: 0.392 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0009] model.layers.0.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.067 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0010] model.layers.0.mlp.up_proj
+  Тип: Linear
+  Время: 0.364 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0011] model.layers.0.mlp.down_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0012] model.layers.1.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.190 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0013] model.layers.1.self_attn.q_proj
+  Тип: Linear
+  Время: 0.214 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0014] model.layers.1.self_attn.k_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0015] model.layers.1.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0016] model.layers.1.self_attn.o_proj
+  Тип: Linear
+  Время: 0.190 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0017] model.layers.1.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.221 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0018] model.layers.1.mlp.gate_proj
+  Тип: Linear
+  Время: 0.380 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0019] model.layers.1.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0020] model.layers.1.mlp.up_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0021] model.layers.1.mlp.down_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0022] model.layers.2.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0023] model.layers.2.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0024] model.layers.2.self_attn.k_proj
+  Тип: Linear
+  Время: 0.105 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0025] model.layers.2.self_attn.v_proj
+  Тип: Linear
+  Время: 0.089 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0026] model.layers.2.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0027] model.layers.2.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0028] model.layers.2.mlp.gate_proj
+  Тип: Linear
+  Время: 0.383 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0029] model.layers.2.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0030] model.layers.2.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0031] model.layers.2.mlp.down_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0032] model.layers.3.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0033] model.layers.3.self_attn.q_proj
+  Тип: Linear
+  Время: 0.219 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0034] model.layers.3.self_attn.k_proj
+  Тип: Linear
+  Время: 0.102 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0035] model.layers.3.self_attn.v_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0036] model.layers.3.self_attn.o_proj
+  Тип: Linear
+  Время: 0.207 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0037] model.layers.3.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.194 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0038] model.layers.3.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0039] model.layers.3.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.044 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0040] model.layers.3.mlp.up_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0041] model.layers.3.mlp.down_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0042] model.layers.4.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.183 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0043] model.layers.4.self_attn.q_proj
+  Тип: Linear
+  Время: 0.225 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0044] model.layers.4.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0045] model.layers.4.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0046] model.layers.4.self_attn.o_proj
+  Тип: Linear
+  Время: 0.190 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0047] model.layers.4.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0048] model.layers.4.mlp.gate_proj
+  Тип: Linear
+  Время: 0.386 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0049] model.layers.4.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0050] model.layers.4.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0051] model.layers.4.mlp.down_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0052] model.layers.5.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.181 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0053] model.layers.5.self_attn.q_proj
+  Тип: Linear
+  Время: 0.233 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0054] model.layers.5.self_attn.k_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0055] model.layers.5.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0056] model.layers.5.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0057] model.layers.5.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.180 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0058] model.layers.5.mlp.gate_proj
+  Тип: Linear
+  Время: 0.377 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0059] model.layers.5.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.062 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0060] model.layers.5.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0061] model.layers.5.mlp.down_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0062] model.layers.6.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.220 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0063] model.layers.6.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0064] model.layers.6.self_attn.k_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0065] model.layers.6.self_attn.v_proj
+  Тип: Linear
+  Время: 0.089 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0066] model.layers.6.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0067] model.layers.6.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.182 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0068] model.layers.6.mlp.gate_proj
+  Тип: Linear
+  Время: 0.400 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0069] model.layers.6.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0070] model.layers.6.mlp.up_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0071] model.layers.6.mlp.down_proj
+  Тип: Linear
+  Время: 0.364 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0072] model.layers.7.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0073] model.layers.7.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0074] model.layers.7.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0075] model.layers.7.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0076] model.layers.7.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0077] model.layers.7.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.186 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0078] model.layers.7.mlp.gate_proj
+  Тип: Linear
+  Время: 0.377 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0079] model.layers.7.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0080] model.layers.7.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0081] model.layers.7.mlp.down_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0082] model.layers.8.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0083] model.layers.8.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0084] model.layers.8.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0085] model.layers.8.self_attn.v_proj
+  Тип: Linear
+  Время: 0.088 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0086] model.layers.8.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0087] model.layers.8.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.181 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0088] model.layers.8.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0089] model.layers.8.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0090] model.layers.8.mlp.up_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0091] model.layers.8.mlp.down_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0092] model.layers.9.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0093] model.layers.9.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0094] model.layers.9.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0095] model.layers.9.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0096] model.layers.9.self_attn.o_proj
+  Тип: Linear
+  Время: 0.186 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0097] model.layers.9.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0098] model.layers.9.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0099] model.layers.9.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.048 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0100] model.layers.9.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0101] model.layers.9.mlp.down_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0102] model.layers.10.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0103] model.layers.10.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0104] model.layers.10.self_attn.k_proj
+  Тип: Linear
+  Время: 0.097 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0105] model.layers.10.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0106] model.layers.10.self_attn.o_proj
+  Тип: Linear
+  Время: 0.180 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0107] model.layers.10.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0108] model.layers.10.mlp.gate_proj
+  Тип: Linear
+  Время: 0.381 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0109] model.layers.10.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.048 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0110] model.layers.10.mlp.up_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0111] model.layers.10.mlp.down_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0112] model.layers.11.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0113] model.layers.11.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0114] model.layers.11.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0115] model.layers.11.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0116] model.layers.11.self_attn.o_proj
+  Тип: Linear
+  Время: 0.183 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0117] model.layers.11.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.199 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0118] model.layers.11.mlp.gate_proj
+  Тип: Linear
+  Время: 0.381 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0119] model.layers.11.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0120] model.layers.11.mlp.up_proj
+  Тип: Linear
+  Время: 0.350 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0121] model.layers.11.mlp.down_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0122] model.layers.12.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0123] model.layers.12.self_attn.q_proj
+  Тип: Linear
+  Время: 0.212 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0124] model.layers.12.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0125] model.layers.12.self_attn.v_proj
+  Тип: Linear
+  Время: 0.119 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0126] model.layers.12.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0127] model.layers.12.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0128] model.layers.12.mlp.gate_proj
+  Тип: Linear
+  Время: 0.401 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0129] model.layers.12.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.045 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0130] model.layers.12.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0131] model.layers.12.mlp.down_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0132] model.layers.13.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.182 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0133] model.layers.13.self_attn.q_proj
+  Тип: Linear
+  Время: 0.214 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0134] model.layers.13.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0135] model.layers.13.self_attn.v_proj
+  Тип: Linear
+  Время: 0.103 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0136] model.layers.13.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0137] model.layers.13.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.220 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0138] model.layers.13.mlp.gate_proj
+  Тип: Linear
+  Время: 0.380 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0139] model.layers.13.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0140] model.layers.13.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0141] model.layers.13.mlp.down_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0142] model.layers.14.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.186 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0143] model.layers.14.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0144] model.layers.14.self_attn.k_proj
+  Тип: Linear
+  Время: 0.115 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0145] model.layers.14.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0146] model.layers.14.self_attn.o_proj
+  Тип: Linear
+  Время: 0.183 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0147] model.layers.14.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0148] model.layers.14.mlp.gate_proj
+  Тип: Linear
+  Время: 0.385 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0149] model.layers.14.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0150] model.layers.14.mlp.up_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0151] model.layers.14.mlp.down_proj
+  Тип: Linear
+  Время: 0.367 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0152] model.layers.15.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.181 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0153] model.layers.15.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0154] model.layers.15.self_attn.k_proj
+  Тип: Linear
+  Время: 0.120 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0155] model.layers.15.self_attn.v_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0156] model.layers.15.self_attn.o_proj
+  Тип: Linear
+  Время: 0.193 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0157] model.layers.15.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0158] model.layers.15.mlp.gate_proj
+  Тип: Linear
+  Время: 0.377 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0159] model.layers.15.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0160] model.layers.15.mlp.up_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0161] model.layers.15.mlp.down_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0162] model.layers.16.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0163] model.layers.16.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0164] model.layers.16.self_attn.k_proj
+  Тип: Linear
+  Время: 0.103 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0165] model.layers.16.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0166] model.layers.16.self_attn.o_proj
+  Тип: Linear
+  Время: 0.181 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0167] model.layers.16.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0168] model.layers.16.mlp.gate_proj
+  Тип: Linear
+  Время: 0.387 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0169] model.layers.16.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0170] model.layers.16.mlp.up_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0171] model.layers.16.mlp.down_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0172] model.layers.17.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.183 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0173] model.layers.17.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0174] model.layers.17.self_attn.k_proj
+  Тип: Linear
+  Время: 0.116 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0175] model.layers.17.self_attn.v_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0176] model.layers.17.self_attn.o_proj
+  Тип: Linear
+  Время: 0.189 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0177] model.layers.17.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0178] model.layers.17.mlp.gate_proj
+  Тип: Linear
+  Время: 0.378 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0179] model.layers.17.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.041 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0180] model.layers.17.mlp.up_proj
+  Тип: Linear
+  Время: 0.380 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0181] model.layers.17.mlp.down_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0182] model.layers.18.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.213 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0183] model.layers.18.self_attn.q_proj
+  Тип: Linear
+  Время: 0.212 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0184] model.layers.18.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0185] model.layers.18.self_attn.v_proj
+  Тип: Linear
+  Время: 0.089 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0186] model.layers.18.self_attn.o_proj
+  Тип: Linear
+  Время: 0.200 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0187] model.layers.18.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.186 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0188] model.layers.18.mlp.gate_proj
+  Тип: Linear
+  Время: 0.381 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0189] model.layers.18.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0190] model.layers.18.mlp.up_proj
+  Тип: Linear
+  Время: 0.361 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0191] model.layers.18.mlp.down_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0192] model.layers.19.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0193] model.layers.19.self_attn.q_proj
+  Тип: Linear
+  Время: 0.213 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0194] model.layers.19.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0195] model.layers.19.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0196] model.layers.19.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0197] model.layers.19.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0198] model.layers.19.mlp.gate_proj
+  Тип: Linear
+  Время: 0.382 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0199] model.layers.19.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.048 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0200] model.layers.19.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0201] model.layers.19.mlp.down_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0202] model.layers.20.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.218 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0203] model.layers.20.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0204] model.layers.20.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0205] model.layers.20.self_attn.v_proj
+  Тип: Linear
+  Время: 0.089 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0206] model.layers.20.self_attn.o_proj
+  Тип: Linear
+  Время: 0.277 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0207] model.layers.20.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0208] model.layers.20.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0209] model.layers.20.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0210] model.layers.20.mlp.up_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0211] model.layers.20.mlp.down_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0212] model.layers.21.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0213] model.layers.21.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0214] model.layers.21.self_attn.k_proj
+  Тип: Linear
+  Время: 0.095 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0215] model.layers.21.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0216] model.layers.21.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0217] model.layers.21.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.182 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0218] model.layers.21.mlp.gate_proj
+  Тип: Linear
+  Время: 0.378 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0219] model.layers.21.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0220] model.layers.21.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0221] model.layers.21.mlp.down_proj
+  Тип: Linear
+  Время: 0.364 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0222] model.layers.22.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.186 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0223] model.layers.22.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0224] model.layers.22.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0225] model.layers.22.self_attn.v_proj
+  Тип: Linear
+  Время: 0.086 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0226] model.layers.22.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0227] model.layers.22.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.182 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0228] model.layers.22.mlp.gate_proj
+  Тип: Linear
+  Время: 0.382 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0229] model.layers.22.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0230] model.layers.22.mlp.up_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0231] model.layers.22.mlp.down_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0232] model.layers.23.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0233] model.layers.23.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0234] model.layers.23.self_attn.k_proj
+  Тип: Linear
+  Время: 0.097 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0235] model.layers.23.self_attn.v_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0236] model.layers.23.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0237] model.layers.23.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0238] model.layers.23.mlp.gate_proj
+  Тип: Linear
+  Время: 0.398 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0239] model.layers.23.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0240] model.layers.23.mlp.up_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0241] model.layers.23.mlp.down_proj
+  Тип: Linear
+  Время: 0.361 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0242] model.layers.24.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0243] model.layers.24.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0244] model.layers.24.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0245] model.layers.24.self_attn.v_proj
+  Тип: Linear
+  Время: 0.098 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0246] model.layers.24.self_attn.o_proj
+  Тип: Linear
+  Время: 0.181 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0247] model.layers.24.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0248] model.layers.24.mlp.gate_proj
+  Тип: Linear
+  Время: 0.381 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0249] model.layers.24.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.047 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0250] model.layers.24.mlp.up_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0251] model.layers.24.mlp.down_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0252] model.layers.25.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.190 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0253] model.layers.25.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0254] model.layers.25.self_attn.k_proj
+  Тип: Linear
+  Время: 0.095 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0255] model.layers.25.self_attn.v_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0256] model.layers.25.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0257] model.layers.25.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.196 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0258] model.layers.25.mlp.gate_proj
+  Тип: Linear
+  Время: 0.381 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0259] model.layers.25.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.044 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0260] model.layers.25.mlp.up_proj
+  Тип: Linear
+  Время: 0.353 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0261] model.layers.25.mlp.down_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0262] model.layers.26.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0263] model.layers.26.self_attn.q_proj
+  Тип: Linear
+  Время: 0.217 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0264] model.layers.26.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0265] model.layers.26.self_attn.v_proj
+  Тип: Linear
+  Время: 0.108 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0266] model.layers.26.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0267] model.layers.26.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0268] model.layers.26.mlp.gate_proj
+  Тип: Linear
+  Время: 0.399 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0269] model.layers.26.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.045 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0270] model.layers.26.mlp.up_proj
+  Тип: Linear
+  Время: 0.350 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0271] model.layers.26.mlp.down_proj
+  Тип: Linear
+  Время: 0.353 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0272] model.layers.27.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.186 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0273] model.layers.27.self_attn.q_proj
+  Тип: Linear
+  Время: 0.212 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0274] model.layers.27.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0275] model.layers.27.self_attn.v_proj
+  Тип: Linear
+  Время: 0.103 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0276] model.layers.27.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0277] model.layers.27.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0278] model.layers.27.mlp.gate_proj
+  Тип: Linear
+  Время: 0.378 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0279] model.layers.27.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0280] model.layers.27.mlp.up_proj
+  Тип: Linear
+  Время: 0.350 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0281] model.layers.27.mlp.down_proj
+  Тип: Linear
+  Время: 0.367 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0282] model.layers.28.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0283] model.layers.28.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0284] model.layers.28.self_attn.k_proj
+  Тип: Linear
+  Время: 0.121 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0285] model.layers.28.self_attn.v_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0286] model.layers.28.self_attn.o_proj
+  Тип: Linear
+  Время: 0.183 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0287] model.layers.28.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0288] model.layers.28.mlp.gate_proj
+  Тип: Linear
+  Время: 0.382 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0289] model.layers.28.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0290] model.layers.28.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0291] model.layers.28.mlp.down_proj
+  Тип: Linear
+  Время: 0.367 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0292] model.layers.29.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.182 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0293] model.layers.29.self_attn.q_proj
+  Тип: Linear
+  Время: 0.207 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0294] model.layers.29.self_attn.k_proj
+  Тип: Linear
+  Время: 0.119 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0295] model.layers.29.self_attn.v_proj
+  Тип: Linear
+  Время: 0.099 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0296] model.layers.29.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0297] model.layers.29.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0298] model.layers.29.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0299] model.layers.29.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.044 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0300] model.layers.29.mlp.up_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0301] model.layers.29.mlp.down_proj
+  Тип: Linear
+  Время: 0.373 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0302] model.layers.30.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0303] model.layers.30.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0304] model.layers.30.self_attn.k_proj
+  Тип: Linear
+  Время: 0.100 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0305] model.layers.30.self_attn.v_proj
+  Тип: Linear
+  Время: 0.088 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0306] model.layers.30.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0307] model.layers.30.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0308] model.layers.30.mlp.gate_proj
+  Тип: Linear
+  Время: 0.383 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0309] model.layers.30.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0310] model.layers.30.mlp.up_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0311] model.layers.30.mlp.down_proj
+  Тип: Linear
+  Время: 0.363 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0312] model.layers.31.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0313] model.layers.31.self_attn.q_proj
+  Тип: Linear
+  Время: 0.216 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0314] model.layers.31.self_attn.k_proj
+  Тип: Linear
+  Время: 0.101 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0315] model.layers.31.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0316] model.layers.31.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0317] model.layers.31.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0318] model.layers.31.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0319] model.layers.31.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0320] model.layers.31.mlp.up_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0321] model.layers.31.mlp.down_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0322] model.norm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0323] lm_head
+  Тип: Linear
+  Время: 4.105 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 128256)
+
+[0324] model.embed_tokens
+  Тип: Embedding
+  Время: 0.116 ms
+  Вход: [(1, 211)]
+  Выход: (1, 211, 3072)
+
+[0325] model.rotary_emb
+  Тип: LlamaRotaryEmbedding
+  Время: 0.425 ms
+  Вход: [(1, 211, 3072), (1, 211)]
+  Выход: [(1, 211, 128), (1, 211, 128)]
+
+[0326] model.layers.0.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.192 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0327] model.layers.0.self_attn.q_proj
+  Тип: Linear
+  Время: 0.217 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0328] model.layers.0.self_attn.k_proj
+  Тип: Linear
+  Время: 0.099 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0329] model.layers.0.self_attn.v_proj
+  Тип: Linear
+  Время: 0.126 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0330] model.layers.0.self_attn.o_proj
+  Тип: Linear
+  Время: 0.183 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0331] model.layers.0.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.186 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0332] model.layers.0.mlp.gate_proj
+  Тип: Linear
+  Время: 0.389 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0333] model.layers.0.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.045 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0334] model.layers.0.mlp.up_proj
+  Тип: Linear
+  Время: 0.348 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0335] model.layers.0.mlp.down_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0336] model.layers.1.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0337] model.layers.1.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0338] model.layers.1.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0339] model.layers.1.self_attn.v_proj
+  Тип: Linear
+  Время: 0.104 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0340] model.layers.1.self_attn.o_proj
+  Тип: Linear
+  Время: 0.181 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0341] model.layers.1.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.180 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0342] model.layers.1.mlp.gate_proj
+  Тип: Linear
+  Время: 0.402 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0343] model.layers.1.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.045 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0344] model.layers.1.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0345] model.layers.1.mlp.down_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0346] model.layers.2.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.183 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0347] model.layers.2.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0348] model.layers.2.self_attn.k_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0349] model.layers.2.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0350] model.layers.2.self_attn.o_proj
+  Тип: Linear
+  Время: 0.186 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0351] model.layers.2.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0352] model.layers.2.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0353] model.layers.2.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0354] model.layers.2.mlp.up_proj
+  Тип: Linear
+  Время: 0.350 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0355] model.layers.2.mlp.down_proj
+  Тип: Linear
+  Время: 0.368 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0356] model.layers.3.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.225 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0357] model.layers.3.self_attn.q_proj
+  Тип: Linear
+  Время: 0.240 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0358] model.layers.3.self_attn.k_proj
+  Тип: Linear
+  Время: 0.140 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0359] model.layers.3.self_attn.v_proj
+  Тип: Linear
+  Время: 0.103 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0360] model.layers.3.self_attn.o_proj
+  Тип: Linear
+  Время: 0.187 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0361] model.layers.3.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.195 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0362] model.layers.3.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0363] model.layers.3.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0364] model.layers.3.mlp.up_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0365] model.layers.3.mlp.down_proj
+  Тип: Linear
+  Время: 0.383 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0366] model.layers.4.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.193 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0367] model.layers.4.self_attn.q_proj
+  Тип: Linear
+  Время: 0.222 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0368] model.layers.4.self_attn.k_proj
+  Тип: Linear
+  Время: 0.098 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0369] model.layers.4.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0370] model.layers.4.self_attn.o_proj
+  Тип: Linear
+  Время: 0.186 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0371] model.layers.4.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.198 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0372] model.layers.4.mlp.gate_proj
+  Тип: Linear
+  Время: 0.390 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0373] model.layers.4.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.054 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0374] model.layers.4.mlp.up_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0375] model.layers.4.mlp.down_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0376] model.layers.5.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.195 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0377] model.layers.5.self_attn.q_proj
+  Тип: Linear
+  Время: 0.212 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0378] model.layers.5.self_attn.k_proj
+  Тип: Linear
+  Время: 0.103 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0379] model.layers.5.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0380] model.layers.5.self_attn.o_proj
+  Тип: Linear
+  Время: 0.189 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0381] model.layers.5.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0382] model.layers.5.mlp.gate_proj
+  Тип: Linear
+  Время: 0.378 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0383] model.layers.5.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.053 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0384] model.layers.5.mlp.up_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0385] model.layers.5.mlp.down_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0386] model.layers.6.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.193 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0387] model.layers.6.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0388] model.layers.6.self_attn.k_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0389] model.layers.6.self_attn.v_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0390] model.layers.6.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0391] model.layers.6.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.241 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0392] model.layers.6.mlp.gate_proj
+  Тип: Linear
+  Время: 0.383 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0393] model.layers.6.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.041 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0394] model.layers.6.mlp.up_proj
+  Тип: Linear
+  Время: 0.351 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0395] model.layers.6.mlp.down_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0396] model.layers.7.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0397] model.layers.7.self_attn.q_proj
+  Тип: Linear
+  Время: 0.212 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0398] model.layers.7.self_attn.k_proj
+  Тип: Linear
+  Время: 0.113 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0399] model.layers.7.self_attn.v_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0400] model.layers.7.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0401] model.layers.7.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.230 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0402] model.layers.7.mlp.gate_proj
+  Тип: Linear
+  Время: 0.381 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0403] model.layers.7.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.041 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0404] model.layers.7.mlp.up_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0405] model.layers.7.mlp.down_proj
+  Тип: Linear
+  Время: 0.371 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0406] model.layers.8.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0407] model.layers.8.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0408] model.layers.8.self_attn.k_proj
+  Тип: Linear
+  Время: 0.106 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0409] model.layers.8.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0410] model.layers.8.self_attn.o_proj
+  Тип: Linear
+  Время: 0.217 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0411] model.layers.8.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0412] model.layers.8.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0413] model.layers.8.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.044 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0414] model.layers.8.mlp.up_proj
+  Тип: Linear
+  Время: 0.388 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0415] model.layers.8.mlp.down_proj
+  Тип: Linear
+  Время: 0.363 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0416] model.layers.9.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.232 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0417] model.layers.9.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0418] model.layers.9.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0419] model.layers.9.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0420] model.layers.9.self_attn.o_proj
+  Тип: Linear
+  Время: 0.186 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0421] model.layers.9.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0422] model.layers.9.mlp.gate_proj
+  Тип: Linear
+  Время: 0.376 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0423] model.layers.9.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.076 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0424] model.layers.9.mlp.up_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0425] model.layers.9.mlp.down_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0426] model.layers.10.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.241 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0427] model.layers.10.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0428] model.layers.10.self_attn.k_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0429] model.layers.10.self_attn.v_proj
+  Тип: Linear
+  Время: 0.088 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0430] model.layers.10.self_attn.o_proj
+  Тип: Linear
+  Время: 0.183 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0431] model.layers.10.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0432] model.layers.10.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0433] model.layers.10.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.053 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0434] model.layers.10.mlp.up_proj
+  Тип: Linear
+  Время: 0.363 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0435] model.layers.10.mlp.down_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0436] model.layers.11.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.193 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0437] model.layers.11.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0438] model.layers.11.self_attn.k_proj
+  Тип: Linear
+  Время: 0.095 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0439] model.layers.11.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0440] model.layers.11.self_attn.o_proj
+  Тип: Linear
+  Время: 0.181 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0441] model.layers.11.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.197 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0442] model.layers.11.mlp.gate_proj
+  Тип: Linear
+  Время: 0.410 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0443] model.layers.11.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.048 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0444] model.layers.11.mlp.up_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0445] model.layers.11.mlp.down_proj
+  Тип: Linear
+  Время: 0.364 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0446] model.layers.12.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.194 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0447] model.layers.12.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0448] model.layers.12.self_attn.k_proj
+  Тип: Linear
+  Время: 0.096 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0449] model.layers.12.self_attn.v_proj
+  Тип: Linear
+  Время: 0.121 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0450] model.layers.12.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0451] model.layers.12.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.241 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0452] model.layers.12.mlp.gate_proj
+  Тип: Linear
+  Время: 0.389 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0453] model.layers.12.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0454] model.layers.12.mlp.up_proj
+  Тип: Linear
+  Время: 0.357 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0455] model.layers.12.mlp.down_proj
+  Тип: Linear
+  Время: 0.369 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0456] model.layers.13.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.193 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0457] model.layers.13.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0458] model.layers.13.self_attn.k_proj
+  Тип: Linear
+  Время: 0.099 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0459] model.layers.13.self_attn.v_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0460] model.layers.13.self_attn.o_proj
+  Тип: Linear
+  Время: 0.179 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0461] model.layers.13.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0462] model.layers.13.mlp.gate_proj
+  Тип: Linear
+  Время: 0.378 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0463] model.layers.13.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.039 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0464] model.layers.13.mlp.up_proj
+  Тип: Linear
+  Время: 0.350 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0465] model.layers.13.mlp.down_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0466] model.layers.14.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0467] model.layers.14.self_attn.q_proj
+  Тип: Linear
+  Время: 0.221 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0468] model.layers.14.self_attn.k_proj
+  Тип: Linear
+  Время: 0.101 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0469] model.layers.14.self_attn.v_proj
+  Тип: Linear
+  Время: 0.089 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0470] model.layers.14.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0471] model.layers.14.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0472] model.layers.14.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0473] model.layers.14.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.045 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0474] model.layers.14.mlp.up_proj
+  Тип: Linear
+  Время: 0.353 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0475] model.layers.14.mlp.down_proj
+  Тип: Linear
+  Время: 0.368 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0476] model.layers.15.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0477] model.layers.15.self_attn.q_proj
+  Тип: Linear
+  Время: 0.232 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0478] model.layers.15.self_attn.k_proj
+  Тип: Linear
+  Время: 0.098 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0479] model.layers.15.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0480] model.layers.15.self_attn.o_proj
+  Тип: Linear
+  Время: 0.201 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0481] model.layers.15.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0482] model.layers.15.mlp.gate_proj
+  Тип: Linear
+  Время: 0.406 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0483] model.layers.15.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.049 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0484] model.layers.15.mlp.up_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0485] model.layers.15.mlp.down_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0486] model.layers.16.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.222 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0487] model.layers.16.self_attn.q_proj
+  Тип: Linear
+  Время: 0.214 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0488] model.layers.16.self_attn.k_proj
+  Тип: Linear
+  Время: 0.095 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0489] model.layers.16.self_attn.v_proj
+  Тип: Linear
+  Время: 0.087 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0490] model.layers.16.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0491] model.layers.16.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0492] model.layers.16.mlp.gate_proj
+  Тип: Linear
+  Время: 0.383 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0493] model.layers.16.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0494] model.layers.16.mlp.up_proj
+  Тип: Linear
+  Время: 0.358 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0495] model.layers.16.mlp.down_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0496] model.layers.17.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0497] model.layers.17.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0498] model.layers.17.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0499] model.layers.17.self_attn.v_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0500] model.layers.17.self_attn.o_proj
+  Тип: Linear
+  Время: 0.181 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0501] model.layers.17.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0502] model.layers.17.mlp.gate_proj
+  Тип: Linear
+  Время: 0.376 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0503] model.layers.17.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0504] model.layers.17.mlp.up_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0505] model.layers.17.mlp.down_proj
+  Тип: Linear
+  Время: 0.363 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0506] model.layers.18.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.269 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0507] model.layers.18.self_attn.q_proj
+  Тип: Linear
+  Время: 0.217 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0508] model.layers.18.self_attn.k_proj
+  Тип: Linear
+  Время: 0.099 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0509] model.layers.18.self_attn.v_proj
+  Тип: Linear
+  Время: 0.088 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0510] model.layers.18.self_attn.o_proj
+  Тип: Linear
+  Время: 0.184 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0511] model.layers.18.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.222 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0512] model.layers.18.mlp.gate_proj
+  Тип: Linear
+  Время: 0.385 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0513] model.layers.18.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0514] model.layers.18.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0515] model.layers.18.mlp.down_proj
+  Тип: Linear
+  Время: 0.368 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0516] model.layers.19.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.195 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0517] model.layers.19.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0518] model.layers.19.self_attn.k_proj
+  Тип: Linear
+  Время: 0.123 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0519] model.layers.19.self_attn.v_proj
+  Тип: Linear
+  Время: 0.095 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0520] model.layers.19.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0521] model.layers.19.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.195 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0522] model.layers.19.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0523] model.layers.19.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0524] model.layers.19.mlp.up_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0525] model.layers.19.mlp.down_proj
+  Тип: Linear
+  Время: 0.363 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0526] model.layers.20.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.190 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0527] model.layers.20.self_attn.q_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0528] model.layers.20.self_attn.k_proj
+  Тип: Linear
+  Время: 0.100 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0529] model.layers.20.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0530] model.layers.20.self_attn.o_proj
+  Тип: Linear
+  Время: 0.211 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0531] model.layers.20.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0532] model.layers.20.mlp.gate_proj
+  Тип: Linear
+  Время: 0.382 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0533] model.layers.20.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0534] model.layers.20.mlp.up_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0535] model.layers.20.mlp.down_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0536] model.layers.21.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.200 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0537] model.layers.21.self_attn.q_proj
+  Тип: Linear
+  Время: 0.213 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0538] model.layers.21.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0539] model.layers.21.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0540] model.layers.21.self_attn.o_proj
+  Тип: Linear
+  Время: 0.206 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0541] model.layers.21.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0542] model.layers.21.mlp.gate_proj
+  Тип: Linear
+  Время: 0.377 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0543] model.layers.21.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0544] model.layers.21.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0545] model.layers.21.mlp.down_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0546] model.layers.22.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.199 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0547] model.layers.22.self_attn.q_proj
+  Тип: Linear
+  Время: 0.215 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0548] model.layers.22.self_attn.k_proj
+  Тип: Linear
+  Время: 0.098 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0549] model.layers.22.self_attn.v_proj
+  Тип: Linear
+  Время: 0.086 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0550] model.layers.22.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0551] model.layers.22.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0552] model.layers.22.mlp.gate_proj
+  Тип: Linear
+  Время: 0.383 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0553] model.layers.22.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0554] model.layers.22.mlp.up_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0555] model.layers.22.mlp.down_proj
+  Тип: Linear
+  Время: 0.354 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0556] model.layers.23.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.214 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0557] model.layers.23.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0558] model.layers.23.self_attn.k_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0559] model.layers.23.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0560] model.layers.23.self_attn.o_proj
+  Тип: Linear
+  Время: 0.180 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0561] model.layers.23.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.184 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0562] model.layers.23.mlp.gate_proj
+  Тип: Linear
+  Время: 0.387 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0563] model.layers.23.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0564] model.layers.23.mlp.up_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0565] model.layers.23.mlp.down_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0566] model.layers.24.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.222 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0567] model.layers.24.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0568] model.layers.24.self_attn.k_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0569] model.layers.24.self_attn.v_proj
+  Тип: Linear
+  Время: 0.094 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0570] model.layers.24.self_attn.o_proj
+  Тип: Linear
+  Время: 0.181 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0571] model.layers.24.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.197 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0572] model.layers.24.mlp.gate_proj
+  Тип: Linear
+  Время: 0.385 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0573] model.layers.24.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0574] model.layers.24.mlp.up_proj
+  Тип: Linear
+  Время: 0.359 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0575] model.layers.24.mlp.down_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0576] model.layers.25.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0577] model.layers.25.self_attn.q_proj
+  Тип: Linear
+  Время: 0.209 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0578] model.layers.25.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0579] model.layers.25.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0580] model.layers.25.self_attn.o_proj
+  Тип: Linear
+  Время: 0.179 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0581] model.layers.25.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0582] model.layers.25.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0583] model.layers.25.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.046 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0584] model.layers.25.mlp.up_proj
+  Тип: Linear
+  Время: 0.356 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0585] model.layers.25.mlp.down_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0586] model.layers.26.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0587] model.layers.26.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0588] model.layers.26.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0589] model.layers.26.self_attn.v_proj
+  Тип: Linear
+  Время: 0.088 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0590] model.layers.26.self_attn.o_proj
+  Тип: Linear
+  Время: 0.183 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0591] model.layers.26.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0592] model.layers.26.mlp.gate_proj
+  Тип: Linear
+  Время: 0.395 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0593] model.layers.26.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.052 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0594] model.layers.26.mlp.up_proj
+  Тип: Linear
+  Время: 0.360 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0595] model.layers.26.mlp.down_proj
+  Тип: Linear
+  Время: 0.364 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0596] model.layers.27.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.191 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0597] model.layers.27.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0598] model.layers.27.self_attn.k_proj
+  Тип: Linear
+  Время: 0.091 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0599] model.layers.27.self_attn.v_proj
+  Тип: Linear
+  Время: 0.111 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0600] model.layers.27.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0601] model.layers.27.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.185 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0602] model.layers.27.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0603] model.layers.27.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0604] model.layers.27.mlp.up_proj
+  Тип: Linear
+  Время: 0.351 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0605] model.layers.27.mlp.down_proj
+  Тип: Linear
+  Время: 0.361 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0606] model.layers.28.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0607] model.layers.28.self_attn.q_proj
+  Тип: Linear
+  Время: 0.210 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0608] model.layers.28.self_attn.k_proj
+  Тип: Linear
+  Время: 0.093 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0609] model.layers.28.self_attn.v_proj
+  Тип: Linear
+  Время: 0.120 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0610] model.layers.28.self_attn.o_proj
+  Тип: Linear
+  Время: 0.187 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0611] model.layers.28.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.224 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0612] model.layers.28.mlp.gate_proj
+  Тип: Linear
+  Время: 0.386 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0613] model.layers.28.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0614] model.layers.28.mlp.up_proj
+  Тип: Linear
+  Время: 0.353 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0615] model.layers.28.mlp.down_proj
+  Тип: Linear
+  Время: 0.365 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0616] model.layers.29.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.192 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0617] model.layers.29.self_attn.q_proj
+  Тип: Linear
+  Время: 0.220 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0618] model.layers.29.self_attn.k_proj
+  Тип: Linear
+  Время: 0.102 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0619] model.layers.29.self_attn.v_proj
+  Тип: Linear
+  Время: 0.092 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0620] model.layers.29.self_attn.o_proj
+  Тип: Linear
+  Время: 0.186 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0621] model.layers.29.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.211 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0622] model.layers.29.mlp.gate_proj
+  Тип: Linear
+  Время: 0.377 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0623] model.layers.29.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0624] model.layers.29.mlp.up_proj
+  Тип: Linear
+  Время: 0.353 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0625] model.layers.29.mlp.down_proj
+  Тип: Linear
+  Время: 0.370 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0626] model.layers.30.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0627] model.layers.30.self_attn.q_proj
+  Тип: Linear
+  Время: 0.208 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0628] model.layers.30.self_attn.k_proj
+  Тип: Linear
+  Время: 0.099 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0629] model.layers.30.self_attn.v_proj
+  Тип: Linear
+  Время: 0.088 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0630] model.layers.30.self_attn.o_proj
+  Тип: Linear
+  Время: 0.185 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0631] model.layers.30.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.187 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0632] model.layers.30.mlp.gate_proj
+  Тип: Linear
+  Время: 0.384 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0633] model.layers.30.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.043 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0634] model.layers.30.mlp.up_proj
+  Тип: Linear
+  Время: 0.355 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0635] model.layers.30.mlp.down_proj
+  Тип: Linear
+  Время: 0.366 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0636] model.layers.31.input_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.188 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0637] model.layers.31.self_attn.q_proj
+  Тип: Linear
+  Время: 0.218 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 4096)
+
+[0638] model.layers.31.self_attn.k_proj
+  Тип: Linear
+  Время: 0.097 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0639] model.layers.31.self_attn.v_proj
+  Тип: Linear
+  Время: 0.090 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 1024)
+
+[0640] model.layers.31.self_attn.o_proj
+  Тип: Linear
+  Время: 0.182 ms
+  Вход: [(1, 211, 4096)]
+  Выход: (1, 211, 3072)
+
+[0641] model.layers.31.post_attention_layernorm
+  Тип: LlamaRMSNorm
+  Время: 0.189 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0642] model.layers.31.mlp.gate_proj
+  Тип: Linear
+  Время: 0.379 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0643] model.layers.31.mlp.act_fn
+  Тип: SiLUActivation
+  Время: 0.042 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 9216)
+
+[0644] model.layers.31.mlp.up_proj
+  Тип: Linear
+  Время: 0.352 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 9216)
+
+[0645] model.layers.31.mlp.down_proj
+  Тип: Linear
+  Время: 0.362 ms
+  Вход: [(1, 211, 9216)]
+  Выход: (1, 211, 3072)
+
+[0646] model.norm
+  Тип: LlamaRMSNorm
+  Время: 0.195 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 3072)
+
+[0647] lm_head
+  Тип: Linear
+  Время: 4.135 ms
+  Вход: [(1, 211, 3072)]
+  Выход: (1, 211, 128256)
+
