@@ -16,4 +16,6 @@
   - `latency-throughput-batching/`
   - `layers-speeds-analysis/`
 
-
+- `Zamba2-1.2B/`
+  - `src` -  ноутбук анализа.
+  - `artifacts/` — сгенерированные артефакты и отчёты (например, `report_*.md`), организованные по размеру контекста.
