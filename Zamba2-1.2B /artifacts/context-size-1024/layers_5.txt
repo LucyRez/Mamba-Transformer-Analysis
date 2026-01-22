@@ -1,0 +1,2040 @@
+[0000] model.embed_tokens
+  Тип: Embedding
+  Время: 0.038 ms
+  Вход: [(1, 1024)]
+  Выход: (1, 1024, 2048)
+
+[0001] model.rotary_emb
+  Тип: Zamba2RotaryEmbedding
+  Время: 0.147 ms
+  Вход: [(1, 1024, 2048), (1, 1024)]
+  Выход: [(1, 1024, 128), (1, 1024, 128)]
+
+[0002] model.layers.0.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0003] model.layers.0.mamba.in_proj
+  Тип: Linear
+  Время: 0.875 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0004] model.layers.0.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0005] model.layers.0.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0006] model.layers.0.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.745 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0007] model.layers.0.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0008] model.layers.1.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.208 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0009] model.layers.1.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0010] model.layers.1.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0011] model.layers.1.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0012] model.layers.1.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.606 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0013] model.layers.1.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0014] model.layers.2.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.269 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0015] model.layers.2.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0016] model.layers.2.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0017] model.layers.2.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0018] model.layers.2.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.591 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0019] model.layers.2.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0020] model.layers.3.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.399 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0021] model.layers.3.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0022] model.layers.3.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0023] model.layers.3.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0024] model.layers.3.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.607 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0025] model.layers.3.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0026] model.layers.4.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0027] model.layers.4.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0028] model.layers.4.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0029] model.layers.4.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0030] model.layers.4.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.800 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0031] model.layers.4.mamba.out_proj
+  Тип: Linear
+  Время: 0.443 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0032] model.layers.5.shared_transformer.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.411 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0033] model.layers.5.shared_transformer.self_attn.q_proj
+  Тип: Linear
+  Время: 0.848 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0034] model.layers.5.shared_transformer.self_attn.k_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0035] model.layers.5.shared_transformer.self_attn.v_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0036] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.0.0
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0037] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.0.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0038] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.0.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0039] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.0.1
+  Тип: Linear
+  Время: 0.038 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0040] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.0.0
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0041] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.0.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0042] model.layers.5.shared_transformer.self_attn.o_proj
+  Тип: Linear
+  Время: 0.782 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0043] model.layers.5.shared_transformer.pre_ff_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.222 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0044] model.layers.5.shared_transformer.feed_forward.gate_up_proj
+  Тип: Linear
+  Время: 1.663 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 16384)
+
+[0045] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.0.0
+  Тип: Linear
+  Время: 0.029 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 128)
+
+[0046] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.0.1
+  Тип: Linear
+  Время: 0.166 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 16384)
+
+[0047] model.layers.5.shared_transformer.feed_forward.act_fn
+  Тип: GELUActivation
+  Время: 0.092 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 8192)
+
+[0048] model.layers.5.shared_transformer.feed_forward.down_proj
+  Тип: Linear
+  Время: 0.855 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 2048)
+
+[0049] model.layers.5.linear
+  Тип: Linear
+  Время: 0.248 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0050] model.layers.5.mamba_decoder.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0051] model.layers.5.mamba_decoder.mamba.in_proj
+  Тип: Linear
+  Время: 1.132 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0052] model.layers.5.mamba_decoder.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0053] model.layers.5.mamba_decoder.mamba.act
+  Тип: SiLU
+  Время: 0.049 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0054] model.layers.5.mamba_decoder.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.623 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0055] model.layers.5.mamba_decoder.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0056] model.layers.6.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.242 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0057] model.layers.6.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0058] model.layers.6.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0059] model.layers.6.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0060] model.layers.6.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.616 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0061] model.layers.6.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0062] model.layers.7.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0063] model.layers.7.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0064] model.layers.7.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0065] model.layers.7.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0066] model.layers.7.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.592 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0067] model.layers.7.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0068] model.layers.8.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.230 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0069] model.layers.8.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0070] model.layers.8.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0071] model.layers.8.mamba.act
+  Тип: SiLU
+  Время: 0.057 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0072] model.layers.8.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.595 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0073] model.layers.8.mamba.out_proj
+  Тип: Linear
+  Время: 0.443 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0074] model.layers.9.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.238 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0075] model.layers.9.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0076] model.layers.9.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0077] model.layers.9.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0078] model.layers.9.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.588 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0079] model.layers.9.mamba.out_proj
+  Тип: Linear
+  Время: 0.443 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0080] model.layers.10.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.242 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0081] model.layers.10.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0082] model.layers.10.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0083] model.layers.10.mamba.act
+  Тип: SiLU
+  Время: 0.049 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0084] model.layers.10.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.592 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0085] model.layers.10.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0086] model.layers.5.shared_transformer.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.403 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0087] model.layers.5.shared_transformer.self_attn.q_proj
+  Тип: Linear
+  Время: 1.167 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0088] model.layers.5.shared_transformer.self_attn.k_proj
+  Тип: Linear
+  Время: 0.848 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0089] model.layers.5.shared_transformer.self_attn.v_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0090] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.1.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0091] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.1.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0092] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.1.0
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0093] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.1.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0094] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.1.0
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0095] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.1.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0096] model.layers.5.shared_transformer.self_attn.o_proj
+  Тип: Linear
+  Время: 0.440 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0097] model.layers.5.shared_transformer.pre_ff_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0098] model.layers.5.shared_transformer.feed_forward.gate_up_proj
+  Тип: Linear
+  Время: 1.914 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 16384)
+
+[0099] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.1.0
+  Тип: Linear
+  Время: 0.029 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 128)
+
+[0100] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.1.1
+  Тип: Linear
+  Время: 0.166 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 16384)
+
+[0101] model.layers.5.shared_transformer.feed_forward.act_fn
+  Тип: GELUActivation
+  Время: 0.094 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 8192)
+
+[0102] model.layers.5.shared_transformer.feed_forward.down_proj
+  Тип: Linear
+  Время: 0.854 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 2048)
+
+[0103] model.layers.11.linear
+  Тип: Linear
+  Время: 0.249 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0104] model.layers.11.mamba_decoder.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0105] model.layers.11.mamba_decoder.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0106] model.layers.11.mamba_decoder.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0107] model.layers.11.mamba_decoder.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0108] model.layers.11.mamba_decoder.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.591 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0109] model.layers.11.mamba_decoder.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0110] model.layers.12.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.233 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0111] model.layers.12.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0112] model.layers.12.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.780 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0113] model.layers.12.mamba.act
+  Тип: SiLU
+  Время: 0.050 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0114] model.layers.12.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 0.817 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0115] model.layers.12.mamba.out_proj
+  Тип: Linear
+  Время: 0.443 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0116] model.layers.13.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.218 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0117] model.layers.13.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0118] model.layers.13.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0119] model.layers.13.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0120] model.layers.13.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.670 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0121] model.layers.13.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0122] model.layers.14.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.212 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0123] model.layers.14.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0124] model.layers.14.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0125] model.layers.14.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0126] model.layers.14.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.620 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0127] model.layers.14.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0128] model.layers.15.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0129] model.layers.15.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0130] model.layers.15.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0131] model.layers.15.mamba.act
+  Тип: SiLU
+  Время: 0.049 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0132] model.layers.15.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.096 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0133] model.layers.15.mamba.out_proj
+  Тип: Linear
+  Время: 0.443 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0134] model.layers.16.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.283 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0135] model.layers.16.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0136] model.layers.16.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0137] model.layers.16.mamba.act
+  Тип: SiLU
+  Время: 0.057 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0138] model.layers.16.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.324 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0139] model.layers.16.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0140] model.layers.5.shared_transformer.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.406 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0141] model.layers.5.shared_transformer.self_attn.q_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0142] model.layers.5.shared_transformer.self_attn.k_proj
+  Тип: Linear
+  Время: 0.847 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0143] model.layers.5.shared_transformer.self_attn.v_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0144] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.2.0
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0145] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.2.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0146] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.2.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0147] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.2.1
+  Тип: Linear
+  Время: 0.038 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0148] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.2.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0149] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.2.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0150] model.layers.5.shared_transformer.self_attn.o_proj
+  Тип: Linear
+  Время: 0.440 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0151] model.layers.5.shared_transformer.pre_ff_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0152] model.layers.5.shared_transformer.feed_forward.gate_up_proj
+  Тип: Linear
+  Время: 1.664 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 16384)
+
+[0153] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.2.0
+  Тип: Linear
+  Время: 0.029 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 128)
+
+[0154] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.2.1
+  Тип: Linear
+  Время: 0.166 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 16384)
+
+[0155] model.layers.5.shared_transformer.feed_forward.act_fn
+  Тип: GELUActivation
+  Время: 0.092 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 8192)
+
+[0156] model.layers.5.shared_transformer.feed_forward.down_proj
+  Тип: Linear
+  Время: 0.855 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 2048)
+
+[0157] model.layers.17.linear
+  Тип: Linear
+  Время: 0.248 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0158] model.layers.17.mamba_decoder.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.206 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0159] model.layers.17.mamba_decoder.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0160] model.layers.17.mamba_decoder.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.316 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0161] model.layers.17.mamba_decoder.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0162] model.layers.17.mamba_decoder.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.618 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0163] model.layers.17.mamba_decoder.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0164] model.layers.18.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0165] model.layers.18.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0166] model.layers.18.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0167] model.layers.18.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0168] model.layers.18.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.920 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0169] model.layers.18.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0170] model.layers.19.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0171] model.layers.19.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0172] model.layers.19.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0173] model.layers.19.mamba.act
+  Тип: SiLU
+  Время: 0.058 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0174] model.layers.19.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.691 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0175] model.layers.19.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0176] model.layers.20.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0177] model.layers.20.mamba.in_proj
+  Тип: Linear
+  Время: 1.494 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0178] model.layers.20.mamba.conv1d
+  Тип: Conv1d
+  Время: 7.229 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0179] model.layers.20.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0180] model.layers.20.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.168 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0181] model.layers.20.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0182] model.layers.21.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.244 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0183] model.layers.21.mamba.in_proj
+  Тип: Linear
+  Время: 1.477 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0184] model.layers.21.mamba.conv1d
+  Тип: Conv1d
+  Время: 7.060 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0185] model.layers.21.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0186] model.layers.21.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.848 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0187] model.layers.21.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0188] model.layers.22.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0189] model.layers.22.mamba.in_proj
+  Тип: Linear
+  Время: 1.467 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0190] model.layers.22.mamba.conv1d
+  Тип: Conv1d
+  Время: 6.927 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0191] model.layers.22.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0192] model.layers.22.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.370 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0193] model.layers.22.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0194] model.layers.5.shared_transformer.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.402 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0195] model.layers.5.shared_transformer.self_attn.q_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0196] model.layers.5.shared_transformer.self_attn.k_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0197] model.layers.5.shared_transformer.self_attn.v_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0198] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.3.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0199] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.3.1
+  Тип: Linear
+  Время: 0.040 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0200] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.3.0
+  Тип: Linear
+  Время: 0.041 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0201] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.3.1
+  Тип: Linear
+  Время: 0.041 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0202] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.3.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0203] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.3.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0204] model.layers.5.shared_transformer.self_attn.o_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0205] model.layers.5.shared_transformer.pre_ff_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.238 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0206] model.layers.5.shared_transformer.feed_forward.gate_up_proj
+  Тип: Linear
+  Время: 2.758 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 16384)
+
+[0207] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.3.0
+  Тип: Linear
+  Время: 0.029 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 128)
+
+[0208] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.3.1
+  Тип: Linear
+  Время: 0.168 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 16384)
+
+[0209] model.layers.5.shared_transformer.feed_forward.act_fn
+  Тип: GELUActivation
+  Время: 0.092 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 8192)
+
+[0210] model.layers.5.shared_transformer.feed_forward.down_proj
+  Тип: Linear
+  Время: 0.854 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 2048)
+
+[0211] model.layers.23.linear
+  Тип: Linear
+  Время: 0.248 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0212] model.layers.23.mamba_decoder.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.204 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0213] model.layers.23.mamba_decoder.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0214] model.layers.23.mamba_decoder.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0215] model.layers.23.mamba_decoder.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0216] model.layers.23.mamba_decoder.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.862 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0217] model.layers.23.mamba_decoder.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0218] model.layers.24.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0219] model.layers.24.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0220] model.layers.24.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0221] model.layers.24.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0222] model.layers.24.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.333 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0223] model.layers.24.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0224] model.layers.25.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0225] model.layers.25.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0226] model.layers.25.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0227] model.layers.25.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0228] model.layers.25.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 5.558 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0229] model.layers.25.mamba.out_proj
+  Тип: Linear
+  Время: 0.443 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0230] model.layers.26.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0231] model.layers.26.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0232] model.layers.26.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.305 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0233] model.layers.26.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0234] model.layers.26.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.133 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0235] model.layers.26.mamba.out_proj
+  Тип: Linear
+  Время: 0.444 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0236] model.layers.27.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.387 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0237] model.layers.27.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0238] model.layers.27.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0239] model.layers.27.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0240] model.layers.27.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.542 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0241] model.layers.27.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0242] model.layers.28.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.395 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0243] model.layers.28.mamba.in_proj
+  Тип: Linear
+  Время: 1.472 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0244] model.layers.28.mamba.conv1d
+  Тип: Conv1d
+  Время: 6.396 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0245] model.layers.28.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0246] model.layers.28.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.253 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0247] model.layers.28.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0248] model.layers.5.shared_transformer.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.424 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0249] model.layers.5.shared_transformer.self_attn.q_proj
+  Тип: Linear
+  Время: 0.847 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0250] model.layers.5.shared_transformer.self_attn.k_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0251] model.layers.5.shared_transformer.self_attn.v_proj
+  Тип: Linear
+  Время: 0.846 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0252] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.4.0
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0253] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.4.1
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0254] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.4.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0255] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.4.1
+  Тип: Linear
+  Время: 0.043 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0256] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.4.0
+  Тип: Linear
+  Время: 0.053 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0257] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.4.1
+  Тип: Linear
+  Время: 0.044 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0258] model.layers.5.shared_transformer.self_attn.o_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0259] model.layers.5.shared_transformer.pre_ff_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.203 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0260] model.layers.5.shared_transformer.feed_forward.gate_up_proj
+  Тип: Linear
+  Время: 2.801 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 16384)
+
+[0261] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.4.0
+  Тип: Linear
+  Время: 0.055 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 128)
+
+[0262] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.4.1
+  Тип: Linear
+  Время: 1.582 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 16384)
+
+[0263] model.layers.5.shared_transformer.feed_forward.act_fn
+  Тип: GELUActivation
+  Время: 0.710 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 8192)
+
+[0264] model.layers.5.shared_transformer.feed_forward.down_proj
+  Тип: Linear
+  Время: 0.854 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 2048)
+
+[0265] model.layers.29.linear
+  Тип: Linear
+  Время: 0.542 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0266] model.layers.29.mamba_decoder.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.221 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0267] model.layers.29.mamba_decoder.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0268] model.layers.29.mamba_decoder.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.307 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0269] model.layers.29.mamba_decoder.mamba.act
+  Тип: SiLU
+  Время: 0.049 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0270] model.layers.29.mamba_decoder.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.341 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0271] model.layers.29.mamba_decoder.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0272] model.layers.30.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.244 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0273] model.layers.30.mamba.in_proj
+  Тип: Linear
+  Время: 1.735 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0274] model.layers.30.mamba.conv1d
+  Тип: Conv1d
+  Время: 6.339 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0275] model.layers.30.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0276] model.layers.30.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.213 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0277] model.layers.30.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0278] model.layers.31.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.220 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0279] model.layers.31.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0280] model.layers.31.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0281] model.layers.31.mamba.act
+  Тип: SiLU
+  Время: 0.049 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0282] model.layers.31.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.285 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0283] model.layers.31.mamba.out_proj
+  Тип: Linear
+  Время: 0.440 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0284] model.layers.32.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.215 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0285] model.layers.32.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0286] model.layers.32.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0287] model.layers.32.mamba.act
+  Тип: SiLU
+  Время: 0.047 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0288] model.layers.32.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 5.027 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0289] model.layers.32.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0290] model.layers.33.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.217 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0291] model.layers.33.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0292] model.layers.33.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0293] model.layers.33.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0294] model.layers.33.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.805 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0295] model.layers.33.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0296] model.layers.34.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.242 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0297] model.layers.34.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0298] model.layers.34.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0299] model.layers.34.mamba.act
+  Тип: SiLU
+  Время: 0.048 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0300] model.layers.34.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 6.158 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0301] model.layers.34.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0302] model.layers.5.shared_transformer.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 3.023 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0303] model.layers.5.shared_transformer.self_attn.q_proj
+  Тип: Linear
+  Время: 0.848 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0304] model.layers.5.shared_transformer.self_attn.k_proj
+  Тип: Linear
+  Время: 0.845 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0305] model.layers.5.shared_transformer.self_attn.v_proj
+  Тип: Linear
+  Время: 1.146 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0306] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.5.0
+  Тип: Linear
+  Время: 0.042 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0307] model.layers.5.shared_transformer.self_attn.linear_q_adapter_list.5.1
+  Тип: Linear
+  Время: 0.339 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0308] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.5.0
+  Тип: Linear
+  Время: 0.041 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0309] model.layers.5.shared_transformer.self_attn.linear_k_adapter_list.5.1
+  Тип: Linear
+  Время: 0.038 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0310] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.5.0
+  Тип: Linear
+  Время: 0.041 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 128)
+
+[0311] model.layers.5.shared_transformer.self_attn.linear_v_adapter_list.5.1
+  Тип: Linear
+  Время: 0.039 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 4096)
+
+[0312] model.layers.5.shared_transformer.self_attn.o_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0313] model.layers.5.shared_transformer.pre_ff_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 1.419 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0314] model.layers.5.shared_transformer.feed_forward.gate_up_proj
+  Тип: Linear
+  Время: 3.006 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 16384)
+
+[0315] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.5.0
+  Тип: Linear
+  Время: 0.029 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 128)
+
+[0316] model.layers.5.shared_transformer.feed_forward.gate_up_proj_adapter_list.5.1
+  Тип: Linear
+  Время: 1.337 ms
+  Вход: [(1, 1024, 128)]
+  Выход: (1, 1024, 16384)
+
+[0317] model.layers.5.shared_transformer.feed_forward.act_fn
+  Тип: GELUActivation
+  Время: 0.092 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 8192)
+
+[0318] model.layers.5.shared_transformer.feed_forward.down_proj
+  Тип: Linear
+  Время: 5.683 ms
+  Вход: [(1, 1024, 8192)]
+  Выход: (1, 1024, 2048)
+
+[0319] model.layers.35.linear
+  Тип: Linear
+  Время: 0.248 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0320] model.layers.35.mamba_decoder.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 2.145 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0321] model.layers.35.mamba_decoder.mamba.in_proj
+  Тип: Linear
+  Время: 0.872 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0322] model.layers.35.mamba_decoder.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.494 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0323] model.layers.35.mamba_decoder.mamba.act
+  Тип: SiLU
+  Время: 0.376 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0324] model.layers.35.mamba_decoder.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.089 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0325] model.layers.35.mamba_decoder.mamba.out_proj
+  Тип: Linear
+  Время: 0.441 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0326] model.layers.36.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 0.216 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0327] model.layers.36.mamba.in_proj
+  Тип: Linear
+  Время: 0.871 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0328] model.layers.36.mamba.conv1d
+  Тип: Conv1d
+  Время: 0.306 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0329] model.layers.36.mamba.act
+  Тип: SiLU
+  Время: 0.049 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0330] model.layers.36.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 4.087 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0331] model.layers.36.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0332] model.layers.37.input_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 1.426 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0333] model.layers.37.mamba.in_proj
+  Тип: Linear
+  Время: 1.486 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 8512)
+
+[0334] model.layers.37.mamba.conv1d
+  Тип: Conv1d
+  Время: 6.751 ms
+  Вход: [(1, 4352, 1024)]
+  Выход: (1, 4352, 1027)
+
+[0335] model.layers.37.mamba.act
+  Тип: SiLU
+  Время: 0.378 ms
+  Вход: [(1, 1027, 4352)]
+  Выход: (1, 1027, 4352)
+
+[0336] model.layers.37.mamba.norm
+  Тип: Zamba2RMSNormGated
+  Время: 1.449 ms
+  Вход: [(1, 1024, 4096), (1, 1024, 4096)]
+  Выход: (1, 1024, 4096)
+
+[0337] model.layers.37.mamba.out_proj
+  Тип: Linear
+  Время: 0.442 ms
+  Вход: [(1, 1024, 4096)]
+  Выход: (1, 1024, 2048)
+
+[0338] model.final_layernorm
+  Тип: Zamba2RMSNorm
+  Время: 1.424 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 2048)
+
+[0339] lm_head
+  Тип: Linear
+  Время: 5.596 ms
+  Вход: [(1, 1024, 2048)]
+  Выход: (1, 1024, 32000)
+
